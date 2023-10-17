@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Team Dashboard Test </title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/dashboard.css" rel="stylesheet">
+
+    <script type="text/javascript" src="js/result.js"></script>
+
+    <!-- Font Awsome link -->
+    <script src="https://kit.fontawesome.com/0220d07b1d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fa-duotone fa-head-side-brain"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Tac-Tic-Tec</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fa-solid fa-chart-pie-simple"></i>
+                    <span>Dashboard</span></a>
+            </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fa-solid fa-chart-pie-simple"></i>
+                    <span>Tactics Vault</span></a>
+            </li>
+             <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fa-solid fa-chart-pie-simple"></i>
+                    <span>Teams</span></a>
+            </li>
+             <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <span>Schedule Genenrator</span></a>
+            </li>
+             <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>Weekly Training Plans</span></a>
+            </li>
+             <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class=" fa fa-solid fa-chart-line-up"></i>
+                     <span>Team Matrics</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Customization</span></a>
+            </li>
+
+
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <span>Select Your Team</span></a>
+                   <!--  <div class="btn-group dropup">
+                      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Team Name
+                      </button>
+                      <div class="dropdown-menu">
+                        <select>John</select>
+                        <option>mark</option>
+                      </div>
+                    </div> -->
+
+                    <div class="dropdown">
+                        <button class="btn btn-dark dropdown-toggle bg-white" type="button" data-toggle="dropdown">Tutorials
+                        <span class="dropdown"></span></button>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">John</a></li>
+                          <li><a href="#">Juhi</a></li>
+                          <li><a href="#">Mark</a></li>
+                        </ul>
+                      </div>
+            </li>
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <div class="topnav">
+                      <a class="active" href="#home">Teams</a>
+                      <a href="#news">U23</a>
+                      <a href="#contact">U19</a>
+                    </div>
+
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mar1 navbar-search">
+                        <div class="input-group">
+                            
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                           
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                    
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="img-profile rounded-circle"
+                                    src="logo.png">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Marcus</span>
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <!-- Content Row -->
+                   <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">Add New Schedule</button>
+
+                        <!-- Modal pop up start -->
+
+                        <div class="modal fade " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered modal-lg font-weight-bold" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header text-center">
+                                        <h5 class="modal-title font-weight-bold" id="exampleModalLabel">Create New Schedule</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <form action="index.html" method="get" id="myform" class="sForm">
+                                     <div class="nav-item">
+                                        <label for="sname" class="form-lable">Schedule Name</label>
+                                        <input type="text" name="sname" id="sname" class="form-control">
+                                    </div>
+                                    <br>
+                                    <div class="col-mid-4 d-sm-flex align-items-center justify-content-between">
+                                        <label for="startdate" class="form-lable"> Start Date <br>
+                                        <input class="form-control" type="date" name="startdate" id="startdate" placeholder="Select Start Date"></label>
+
+                                        <label for="enddate" class="form-lable"> End Date <br>
+                                        <input class="form-control" type="date" name="enddate" id="enddate" placeholder="Select End Date"></label>
+
+                                        <label for="weekcount" class="form-lable"> Enter No. of Weeks <br> 
+                                        <input class="form-control" type="text" name="weekcount" id="weekcount" placeholder="Enter No. of Weeks"></label>
+                                    </div>
+
+                                    <div class="modal-footer col-mid-2 d-sm-flex align-items-center justify-content-between">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="submit" name="submit" type="submit" class="btn btn-search" onclick="onCreate()">Create</button>
+                              </div>
+                                </form>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Modal pop up end -->
+
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+
+                        <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <i class="fa-regular fa-magnifying-glass"></i> 
+                            <input type="text" class="form-control border-0 small" placeholder="Search your Schedule" aria-label="Search" aria-describedby="basic-addon2">
+                            
+                        </div>
+                        </form></a>
+                    </div>
+                        
+                </div>
+
+                <!-- start of  Winter Training header -->
+                <nav class="navbar navbar-expand navbar-light bg-white static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form class="d-none d-sm-inline-block form-inline mar1 navbar-search">
+                        <div class="input-group">
+                             <label class="h5 mb-0 font-weight-bold text-gray-800">
+                            Winter Training Schedule
+                        </label>
+                            <div class="col-lg-8 mb-2 font-weight-bold small">
+                                4 Weeks | 12 Sessions
+                            </div>
+                       
+                       
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <div class="d-none d-sm-block"></div>
+                         <ul class="navbar-nav ml-auto nav-flex-icons">
+                                <li class="nav-item">
+                                    <a class="nav-link waves-effect waves-light">
+                                    <i class="fa fa-solid fa-pen" style="color: lightgray;"></i>
+                                    </a>
+                                        </li>
+                                        <li class="nav-item icons">
+                                            <a class="nav-link waves-effect waves-light">
+                                                <i class="fa fa-solid fa-trash" style="color: red ;"></i>
+                                            </a>
+                                          </li>
+                                          <li class="nav-item">
+                                              <a class="nav-link waves-effect waves-light">
+                                                  <i class="fa fa-solid fa-caret-up" style="color: green;"></i>
+
+                                              </a>
+                                            </li>
+                              </ul>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent-3"></div>
+                    </ul>
+                </nav>
+
+                <!-- Divider -->
+                <hr class="sidebar-divider my-0">       
+                <!-- end of winter training header -->
+
+                <!-- Date --> 
+
+                <div class="navbar navbar-expand navbar-light bg-white static-top shadow">
+                     <div class="col-lg-3 mb-2 font-weight-bold small">
+                        <label for="startdate" class="form-lable"> Start Date <br>
+                            <input class="form-control" type="date" name="startdate" id="startdate" placeholder="Select Start Date"></label>
+
+                    </div>
+                    <div class="col-lg-7 mb-2 font-weight-bold small">
+                         <label for="enddate" class="form-lable"> End Date <br>
+                             <input class="form-control" type="date" name="enddate" id="enddate" placeholder="Select End Date"></label>    
+                    </div>
+
+
+                                        
+
+                      <div class="col-lg-3 mb-2 d-sm-flex align-items-center justify-content-between">
+                        <button class="btn">Update</button>
+                    </div>
+                </div>
+
+                    <form style="background-color: white;">
+                        <label class="checkbox-inline col-auto mb-2 card-header bg-white">
+                          <input type="checkbox" value="">SUNDAY
+                        </label>
+                        <label class="checkbox-inline col-auto mb-2 card-header bg-white">
+                          <input type="checkbox" value="">MONDAY
+                        </label>
+                        <label class="checkbox-inline col-auto mb-2 card-header bg-white">
+                          <input type="checkbox" value="">TUESDAY
+                        </label>
+                        <label class="checkbox-inline col-auto mb-2 card-header bg-white">
+                            <input type="checkbox" value="">WEDNESDAY
+                        </label>
+                        <label class="checkbox-inline col-auto mb-2 card-header bg-white">
+                            <input type="checkbox" value="">THURSDAY
+                        </label>
+                        <label class="checkbox-inline col-auto card-header bg-white">
+                            <input type="checkbox" value="">FRIDAY
+                        </label>
+                        <label class="checkbox-inline col-auto mb-2 card-header bg-white">
+                            <input type="checkbox" value="">SATURDAY
+                        </label>
+                    </form>
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    
+
+                    <!-- Topbar Search -->
+                   
+                <nav class="navbar navbar-expand navbar-light bg-white static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form class="d-none d-sm-inline-block form-inline mar1 navbar-search">
+                        <div class="input-group">
+                             <label class="h5 mb-0 font-weight-bold text-gray-800">
+                            Winter Training Schedule
+                        </label>
+                            <div class="col-lg-8 mb-2 font-weight-bold small">
+                                4 Weeks | 12 Sessions
+                            </div>
+                       
+                       
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <div class="d-none d-sm-block"></div>
+                        <li class="nav-item">
+                                              <a class="nav-link waves-effect waves-light">
+                                                  <i class="fa fa-solid fa-caret-down" style="color: green;"></i>
+
+                                              </a>
+                                            </li>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent-3"></div>
+                    </ul>
+                </nav>
+                 <nav class="navbar navbar-expand navbar-light bg-white static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form class="d-none d-sm-inline-block form-inline mar1 navbar-search">
+                        <div class="input-group">
+                             <label class="h5 mb-0 font-weight-bold text-gray-800">
+                            Winter Training Schedule
+                        </label>
+                            <div class="col-lg-8 mb-2 font-weight-bold small">
+                                4 Weeks | 12 Sessions
+                            </div>
+                       
+                       
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <div class="d-none d-sm-block"></div>
+                        <li class="nav-item">
+                                              <a class="nav-link waves-effect waves-light">
+                                                  <i class="fa fa-solid fa-caret-down" style="color: green;"></i>
+
+                                              </a>
+                                            </li>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent-3"></div>
+                    </ul>
+                </nav>
+                 <nav class="navbar navbar-expand navbar-light bg-white static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form class="d-none d-sm-inline-block form-inline mar1 navbar-search">
+                        <div class="input-group">
+                             <label class="h5 mb-0 font-weight-bold text-gray-800">
+                            Winter Training Schedule
+                        </label>
+                            <div class="col-lg-8 mb-2 font-weight-bold small">
+                                4 Weeks | 12 Sessions
+                            </div>
+                       
+                       
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <div class="d-none d-sm-block"></div>
+                        <li class="nav-item">
+                                              <a class="nav-link waves-effect waves-light">
+                                                  <i class="fa fa-solid fa-caret-down" style="color: green;"></i>
+
+                                              </a>
+                                            </li>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent-3"></div>
+                    </ul>
+                </nav>
+                 <nav class="navbar navbar-expand navbar-light bg-white static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form class="d-none d-sm-inline-block form-inline mar1 navbar-search">
+                        <div class="input-group">
+                             <label class="h5 mb-0 font-weight-bold text-gray-800">
+                            Winter Training Schedule
+                        </label>
+                            <div class="col-lg-8 mb-2 font-weight-bold small">
+                                4 Weeks | 12 Sessions
+                            </div>
+                       
+                       
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <div class="d-none d-sm-block"></div>
+                        <li class="nav-item">
+                                              <a class="nav-link waves-effect waves-light">
+                                                  <i class="fa fa-solid fa-caret-down" style="color: green;"></i>
+
+                                              </a>
+                                            </li>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent-3"></div>
+                    </ul>
+                </nav>
+                 <nav class="navbar navbar-expand navbar-light bg-white static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form class="d-none d-sm-inline-block form-inline mar1 navbar-search">
+                        <div class="input-group">
+                             <label class="h5 mb-0 font-weight-bold text-gray-800">
+                            Winter Training Schedule
+                        </label>
+                            <div class="col-lg-8 mb-2 font-weight-bold small">
+                                4 Weeks | 12 Sessions
+                            </div>
+                       
+                       
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <div class="d-none d-sm-block"></div>
+                        <li class="nav-item">
+                                              <a class="nav-link waves-effect waves-light">
+                                                  <i class="fa fa-solid fa-caret-down" style="color: green;"></i>
+
+                                              </a>
+                                            </li>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent-3"></div>
+                    </ul>
+                </nav>
+
+                </div>
+
+            </div>
+                <!-- /.container-fluid -->
+
+
+        </div>
+            <!-- End of Main Content -->
+
+           
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    </script> -->
+
+        <script>
+            
+            const sForm = document.querySelector('.sForm'),
+                    form = document.querySelectorAll('.form'),
+                    SubmitInput = form[0].querySelector('input[type="submit"]');
+
+                function getDataForm(e) {
+                        e.preventDefault();
+                        var formData = new FormData(form[0]);
+
+                    alert(formData.get('sname') + '-' + formData.get('weekcount'));
+
+                    document.addEventListener('DOMContentLoaded', function(){
+                        SubmitInput.addEventListener('click', getDataForm, false);
+                    
+                }, false);
+        </script>
+
+
+</body>
+
+</html>
